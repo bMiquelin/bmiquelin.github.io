@@ -60,6 +60,14 @@ button.img-button {
     width: 1rem;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .grid {
         padding-right: 2rem;
