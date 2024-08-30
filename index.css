@@ -146,6 +146,18 @@ footer div.footer-content {
 .portfolio {
     display: flex;
     gap: 2rem;
+    
+}
+
+#portfolio {
+    background-image: url("assets/divider.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+#academic {
+    background-image: url("assets/divider.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 
 .portfolio .left {
