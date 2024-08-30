@@ -150,6 +150,7 @@ footer div.footer-content {
 
 .portfolio .left {
     font-size: 1rem;
+    flex-direction: column;
 }
 .left {
     display: flex;
