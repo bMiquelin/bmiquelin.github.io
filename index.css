@@ -223,7 +223,6 @@ footer div.footer-content {
     content: ": ";
 }
 .list-value {
-    font-weight: lighter;
     font-size: .8rem;
     vertical-align: middle;
 }
