@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+    <title>Bruno Miquelin - Fullstack Developer</title>
     <meta charset="UTF-8">
     <meta name="author" content="Bruno Miquelin">
-    <meta name="description" content="Landing page Bruno Miquelin">
-    <meta name="keywords" content="dev, web, miquelin, bruno miquelin, freela, portfolio, developer, programador, desenvolvedor, backend, frontend, fullstack">
+    <meta property="og:title" content="Bruno Miquelin - Fullstack Developer & Tech Lead">
+    <meta property="og:description" content="Explore Bruno Miquelin's portfolio...">
+    <meta property="og:image" content="/assets/photo.jpg">
+    <meta name="description" content="Bruno Miquelin's portfolio - Fullstack Developer, Tech Lead, and Software Architect with expertise in .NET, frontend and backend development, and enterprise software solutions.">
+    <meta name="keywords" content="Bruno Miquelin, fullstack developer, tech lead, .NET developer, software architect, web development, portfolio, Rio de Janeiro">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.position" content="-22.9068;-43.1729">
+    <meta name="geo.placename" content="Rio de Janeiro, Brazil">
+    <meta name="geo.region" content="BR-RJ">
+    <meta rel="canonical" href="https://bmiquelin.github.io/">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="index.js"></script>
 </head>
 <body>
     <header class="dark grid">
@@ -15,21 +24,192 @@
             <div class="logo">
                 <span class="title">Bruno Miquelin</span>
                 <br>
-                <span class="subtitle">Software Developer | .Net | Azure | Angular | Architecture </span>
+                <span data-lang-en="Software Developer | .Net | Azure | Angular | Architecture" data-lang-pt="Desenvolvedor | .Net | Azure | Angular | Arquitetura"  class="subtitle"></span>
+            </div>
+            <div>
+                <button class="img-button lang-btn" id="btn-lang-en">
+                    <img class="img-icon-small" src="assets/en-us.png" alt="US Flag Icon">
+                </button>
+                <button class="img-button lang-btn" id="btn-lang-pt">
+                    <img class="img-icon-small" src="assets/pt-br.png" alt="US Flag Icon">
+                </button>
             </div>
         </nav>
     </header>
     <main>
-        <section class="grid">
-            <div class="portfolio">
+        <section class="grid" id="portfolio">
+            <div class="portfolio content">
                 <div class="left">
-                    <p>Tenho ~10 anos de experiência em desenvolvimento de software. Atuei principalmente no setor de energia elétrica e em sistemas financeiros para empresas de ramos diversos. Coração de dev, e com muito interesse na área de arquitetura moderna. Especializado em .NET/Angular, mas totalmente aberto para outros stacks.</p>
+                    <p data-lang-en="Versatile Software Engineer with 10 years of varied IT experience, proficient in .NET and Angular, and eager to embrace emerging technologies. Pursuing stimulating opportunities where I can utilize my problem-solving prowess and apply modern architecture solutions." data-lang-pt="Tenho ~10 anos de experiência em desenvolvimento de software. Atuei principalmente no setor de energia elétrica e em sistemas financeiros para empresas de ramos diversos. Coração de dev, e com muito interesse na área de arquitetura moderna. Especializado em .NET/Angular, e aberto para outros stacks."></p>
                 </div>
                 <div class="right">
-                    <img class="cicle-photo" alt="Photo of Bruno Miquelin" src="https://media.licdn.com/dms/image/v2/D4D03AQEL7dJAyiq4dA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1715610770240?e=1730332800&v=beta&t=3AQXC_DJYC0qOPAvVbBYc45aLfLOEHf4gnaJdU_EXg8">
+                    <img class="circle-photo" alt="Photo of Bruno Miquelin" src="assets/photo.png">
+                </div>
+            </div>
+        </section>
+        <section class="grid dark" id="skills">
+            <h1 class="section-title">
+                <img class="img-icon color-invert" src="assets/skills.svg" alt="skill icon">
+                <span data-lang-en="Skills" data-lang-pt="Habilidades"></span>
+            </h1>
+            <h5>Web</h5>
+            <div class="skill-list">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge" alt="JS">
+                <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge" alt="JS">
+                <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=for-the-badge" alt="NPM">
+                <img src="https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=for-the-badge" alt="SASS">
+                <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=for-the-badge" alt="Angular">
+                <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&style=for-the-badge" alt="React">
+                <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white&style=for-the-badge" alt=">C#">
+                <img src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge" alt=">.NET">
+                <img src="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff&style=for-the-badge" alt=">jQuery">
+            </div>
+            <h5 data-lang-en="Data" data-lang-pt="Dados"></h5>
+            <div class="skill-list">
+                <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?logo=microsoft%20sql%20server&logoColor=white&style=for-the-badge" alt="SQLServer">
+                <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white&style=for-the-badge" alt="MongoDB">
+                <img src="https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white&style=for-the-badge" alt="Postgres">
+                <img src="https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white&style=for-the-badge" alt="Redis">
+                <img src="https://img.shields.io/badge/MySQL-005C84?logo=mysql&logoColor=white&style=for-the-badge" alt="MySQL">
+                <img src="https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white&style=for-the-badge" alt="SQLite">
+                <img src="https://img.shields.io/badge/rabbitmq-%23FF6600.svg?logo=rabbitmq&logoColor=white&style=for-the-badge" alt="RabbitMQ">
+            </div>
+            <h5 data-lang-en="DevOps & Architecture" data-lang-pt="DevOps & Arquitetura"></h5>
+            <div class="skill-list">
+                <img src="https://img.shields.io/badge/Azure_Cloud-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
+                <img src="https://img.shields.io/badge/Azure_DevOps-0078D7?logo=azure-devops&logoColor=black&style=for-the-badge" alt="Azure DevOps">
+                <img src="https://img.shields.io/badge/SonarQube-685275?logo=sonarqube&logoColor=black&style=for-the-badge" alt="SonarQube">
+                <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=for-the-badge" alt="Docker">
+                <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white&style=for-the-badge" alt="Jenkins">
+                <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge" alt="Linux">
+                <img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white&style=for-the-badge" alt="Windows">
+            </div>
+            <h5>Etc</h5>
+            <div class="skill-list">
+                <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge" alt="Python">
+                <img src="https://img.shields.io/badge/Lua-%232C2D72.svg?logo=lua&style=for-the-badge" alt=".LUA">
+                <img src="https://img.shields.io/badge/Unity-%23000000.svg?logo=unity&logoColor=white&style=for-the-badge" alt="Unity">
+                <img src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=fff&style=for-the-badge" alt="NeoVIM">
+                <img src="https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white&style=for-the-badge" alt="vs-code">
+            </div>
+        </section>
+        <section class="grid" id="experience">
+            <h1 class="section-title">
+                <img class="img-icon" src="assets/experience.svg" alt="experience icon">
+                <span data-lang-en="Experience" data-lang-pt="Experiência"></span>
+            </h1>
+            <div class="job">
+                <h3 class="job-title">Taesa &nbsp;<span class="job-role" data-lang-pt="Sustentação de Sistemas / Líder Técnico" data-lang-en="IT Operations Analyst / Tech Lead"></span></h3>
+                <span class="job-period" data-lang-en="SINCE FEB/2023" data-lang-pt="DESDE DEV/2023"></span>
+                <ul>
+                    <li><span class="list-key" data-lang-en="Tech Lead" data-lang-pt="Líder Técnico"></span><span class="list-value" data-lang-en="Led the evolution and maintenance of enterprise services" data-lang-pt="Liderei a evolução e manutenção dos serviços empresariais, coordenando squads internos e fornecedores para garantir a eficiência e a atualização contínua das soluções tecnológicas."></span></li>
+                    <li><span class="list-key" data-lang-en="In-house Development" data-lang-pt="Desenvolvimento In-house"></span><span class="list-value" data-lang-en="Developed critical and strategic solutions" data-lang-pt="Atuei diretamente no desenvolvimento de soluções críticas e estratégicas, contribuindo para a criação e aprimoramento de serviços essenciais para a empresa."></span></li>
+                    <li><span class="list-key" data-lang-en="DevOps Promotion" data-lang-pt="DevOps"></span><span class="list-value" data-lang-en="Implemented CI/CD standards using Azure DevOps, collaborating with infrastructure, cybersecurity, and architecture teams." data-lang-pt="Implantei padrões de CI/CD utilizando Azure DevOps, colaborando com equipes de infraestrutura, cibersegurança e arquitetura para melhorar a integração e a entrega contínua de software."></span></li>
+                    <li><span class="list-key" data-lang-en="Consultant Coordination" data-lang-pt="Coordenação de Consultores"></span><span class="list-value" data-lang-en="Supported and coordinated third-party consultants, ensuring compliance with company norms and standards and managing new contracts/renewals." data-lang-pt="Apoiei e coordenei consultores externos, atuando como ponto focal para garantir conformidade com normas e padrões da empresa. Também gerenciei novos contratos e renovações."></span></li>
+                    <li><span class="list-key" data-lang-en="Documentation & Estimation" data-lang-pt="Documentações e Estimativas"></span><span class="list-value" data-lang-en="Created and validated technical documentation, estimated efforts, and ensured alignment with business needs." data-lang-pt="Criei e validei documentações técnicas, estimando os esforços necessários e assegurando o alinhamento com as necessidades de negócio da empresa."></span></li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3 class="job-title">Radix Eng. &nbsp;<span class="job-role" data-lang-pt="Desenvolvedor / Líder Técnico" data-lang-en="Software Engineer / Tech Lead"></span></h3>
+                <span class="job-period" data-lang-en="DEC/2018 - FEB/2023 (4 years, 4 months)" data-lang-pt="DEZ/2018 - FEV/2023 (4 anos, 4 meses)"></span>
+                <ul>
+                    <li><span class="list-key" data-lang-en="Consultancy Services" data-lang-pt="Serviços de Consultoria"></span><span class="list-value" data-lang-en="Developed custom applications for the power industry." data-lang-pt="Desenvolvi aplicações para a indústria de energia."></span></li>
+                    <li><span class="list-key" data-lang-en="Squad Leadership" data-lang-pt="Liderança de Equipes"></span><span class="list-value" data-lang-en="Led small development squads, performed pair-programming, code reviews, ensured quality standards." data-lang-pt="Liderei pequenos squads de devs, realizei pair-programming, code reviews, e garanti padrões de qualidade."></span></li>
+                    <li><span class="list-key" data-lang-en="Cloud & Development Skills" data-lang-pt="Cloud & Dev"></span><span class="list-value" data-lang-en="Proficient with .NET, React, Angular, Azure Cloud, Ionic, Cordova, Unity3D and computer vision/augmented reality." data-lang-pt="Atuei com .NET, React, Angular, Azure Cloud, Ionic, Cordova, Unity3D e visão computacional/realidade aumentada com Python."></span></li>
+                    <li><span class="list-key" data-lang-en="Cloud Monitoring" data-lang-pt="Monitoramento"></span><span class="list-value" data-lang-en="Monitored cloud environments for cost reductions, security fixes, CI/CD setups and service malfunctions." data-lang-pt="Monitoramento de performance e falhas das aplicações, atuação na redução de custos (cloud/azure) e correções de segurança."></span></li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3 class="job-title">ASC Solutions &nbsp;<span class="job-role" data-lang-pt="Desenvolvedor" data-lang-en="Developer"></span></h3>
+                <span class="job-period" data-lang-en="JAN/2018 - DEC/2018 (11 months)" data-lang-pt="JAN/2018 - DEZ/2018 (11 meses)"></span>
+                <ul>
+                    <li><span class="list-key" data-lang-en="Modern & Cloud Solutions" data-lang-pt="Desenvolvimento de Produtos"></span><span class="list-value" data-lang-en="Developed cloud architecture solutions using .NET/Angular in a DevOps environment." data-lang-pt="Desenvolvi soluções de arquitetura em nuvem utilizando .NET/Angular em um ambiente DevOps."></span></li>
+                    <li><span class="list-key" data-lang-en="E-Commerce Maintenance" data-lang-pt="Manutenção de E-Commerce"></span><span class="list-value" data-lang-en="Maintained an e-commerce platform with over 30K daily purchases. Created dashboards, plugins, and a Xamarin mobile app." data-lang-pt="Mantive uma plataforma de e-commerce com mais de 30K compras diárias. Criação de dashboards, plugins e um aplicativo em Xamarin."></span></li>
+                    <li><span class="list-key" data-lang-en="IoT Development" data-lang-pt="Desenvolvimento IoT"></span><span class="list-value" data-lang-en="Developed physical access-control solutions with facial, fingerprint, and license plate recognition using Python, .NET, and C++." data-lang-pt="Desenvolvi soluções de controle de acesso físico com reconhecimento facial, de impressões digitais e de placas de veículos utilizando Python, .NET e C++."></span></li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3 class="job-title">Gluck Info &nbsp;<span class="job-role" data-lang-pt="Desenvolvedor" data-lang-en="Developer"></span></h3>
+                <span class="job-period" data-lang-en="JUL/2015 - JAN/2018 (2 years, 8 months)" data-lang-pt="JUL/2015 - JAN/2018 (2 anos, 8 meses)"></span>
+                <ul>
+                    <li><span class="list-key" data-lang-en=".NET Development" data-lang-pt=".NET Development"></span><span class="list-value" data-lang-en="Developed applications using C#/VB, WinForms, WPF, and WebForms, implementing complex calculations (budgeting, payroll, retirement simulations)." data-lang-pt="Desenvolvi aplicações utilizando C#/VB, WinForms, WPF e WebForms, implementando cálculos complexos (orçamentário, folhas de pagamento, simulações de aposentadoria)."></span></li>
+                    <li><span class="list-key" data-lang-en="ASP.NET Maintenance" data-lang-pt="Sustentação ASP.NET"></span><span class="list-value" data-lang-en="Maintained enterprise financial services." data-lang-pt="Mantive serviços financeiros empresariais."></span></li>
+                    <li><span class="list-key" data-lang-en="Database Optimization" data-lang-pt="Otimização de Banco de Dados"></span><span class="list-value" data-lang-en="Optimized database procedures, views, and transactions, IAM control." data-lang-pt="Otimizei procedimentos, views e transações de banco de dados, controle IAM."></span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="grid bright" id="academic">
+            <h1 class="section-title">
+                <img class="img-icon" src="assets/graduation.svg" alt="graduation icon">
+                <span data-lang-en="Academic" data-lang-pt="Acadêmico"></span>
+            </h1>
+            <div class="academic-list">
+                <div class="academic-item">
+                    <div class="academic-logo">
+                        <img src="https://unicarioca.edu.br/wp-content/uploads/2023/05/logo_unicariocadigital_vertical_2021-1-1.png" alt="unicarioca logo">
+                    </div>
+                    <h3 class="academic-title"><span class="academic-role" data-lang-pt="Ciências da Computação" data-lang-en="Bachelor in Computer Science"></span></h3>
+                    <div class="academic-info">
+                        <a href="https://unicarioca.edu.br/cursos/graduacao/ciencia-da-computacao/" target="_blank">https://unicarioca.edu.br/</a>
+                        <span class="list-value" data-lang-en="2014-2019" data-lang-pt="2015-2019"></span>
+                        <span class="list-value" data-lang-en="Thesis: Continuous Monitoring with Azure" data-lang-pt="TCC: Monitoramento Contínuo com Azure"></span>
+                    </div>
+                </div>
+                <div class="academic-item">
+                    <div class="academic-logo">
+                        <img src="assets/redzero.webp" alt="redzero logo">
+                        <img src="assets/fullsail.png" alt="fullsail logo">
+                    </div>
+                    <h3 class="academic-title">Game Development</h3>
+                    <div class="academic-info">
+                        <span class="list-value" data-lang-en="2012-2015 (500 hours)" data-lang-pt="2012-2015 (500 horas)"></span>
+                        <span class="list-value" data-lang-en="C#, XNA.NET, Flash, Unity, Blender, Photoshop, Maya, Art, Concept" data-lang-pt="XNA.net, Flash, Unity, Blender, Maya, Arte, Concept"></span>
+                    </div>
+                </div>
+                <div class="academic-item">
+                    <div class="academic-logo">
+                        <img src="assets/ms-badge.png" alt="MS az-305 badge">
+                    </div>
+                    <h3 class="academic-title">Microsoft Azure Solutions Architect Expert Certified</span></h3>
+                    <div class="academic-info">
+                        <span class="small-text">Certification Number: Y72C16-5A0E0D</span>
+                        <ul>
+                            <li><span class="list-key">AZ-303</span><span class="list-value">Microsoft Azure Architect Technologies</span></li>
+                            <li><span class="list-key">AZ-304</span><span class="list-value">Microsoft Azure Architect Design</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="grid dark">
+        <div class="contact-info">
+            <div class="left">
+                <img class="img-icon" src="assets/email.svg" alt="email icon">
+                <span>bruno.b.miquelin@gmail.com</span>
+            </div>
+            <div class="right">
+                <img class="img-icon" src="assets/whatsapp.svg" alt="whatsapp icon">
+                <span>+55 (21) 96582-3026</span>
+            </div>
+        </div>
+        <div class="contact-list">
+            <a href="https://github.com/bmiquelin" target="_blank">
+                <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&style=flat-square&logoColor=white" alt="github logo">
+            </a>
+            <a href="https://www.linkedin.com/in/bruno-miquelin-208339101" target="_blank">
+                <img src="https://img.shields.io/badge/Linkedin-%230077B5.svg?logo=linkedin&logoColor=white&style=flat-square" alt="linkedin logo">
+            </a>
+            <a href="https://discord.com/users/286553822531158017" target="_blank">
+                <img src="https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white&style=flat-square" alt="discord logo">
+            </a>
+            <a href="https://gitlab.com/bMiquelin" target="_blank">
+                <img src="https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=fff&style=flat-square" alt="gitlab logo">
+            </a>
+        </div>
+        <div class="footer-content">
+            <span>&copy; 2024 Developed by Bruno Miquelin</span>
+        </div>
+    </footer>
 </body>
 </html>
