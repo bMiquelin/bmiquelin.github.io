@@ -100,6 +100,10 @@ button.img-button {
     .portfolio .left {
         order: 2;
     }
+
+    .contact-info {
+        flex-direction: column;
+    }
 }
 
 /* Header Content */
